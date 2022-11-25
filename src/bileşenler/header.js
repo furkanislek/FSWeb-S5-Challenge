@@ -11,9 +11,38 @@ const Header = (baslik, tarih, yazi) => {
   //    <span class="temp">{ yazi }</span>
   //  </div>
   //
+  const headerDiv = document.createElement('div');
+  const spanDate = document.createElement('span');
+  const h1Baslik = document.createElement('h1');
+  const spanYazi = document.createElement('span');
+
+  headerDiv.classList.add("header");
+  spanDate.classList.add("date");
+  spanYazi.classList.add("temp");
+
+  spanDate.textContent = tarih;
+  h1Baslik.textContent = baslik;
+  spanYazi.textContent = yazi;
+
+  headerDiv.appendChild(spanDate);
+  headerDiv.appendChild(h1Baslik);
+  headerDiv.appendChild(spanYazi);
+
+  return headerDiv;
 }
 
+
 const headerEkleyici = (secici) => {
+
+  const headerContainer = document.querySelector(secici);
+
+  const myHeader = Header("Teknoloji Zamanı", "11 Kasım 2022", "sağdaki yazı");
+
+  headerContainer.appendChild(myHeader);
+
+  // return headerContainer;  Bir değişkene bir şey eklemediği için return gerekmiyor.
+
+
   // GÖREV 2
   // ---------------------
   // Tek argümanı olarak bir css seçici alan bu fonksiyonu uygulayın.
@@ -25,5 +54,4 @@ const headerEkleyici = (secici) => {
   // fakat aynı zamanda bir değişken de alabilir (bknz: querySelector(secici))
  
 }
-
 export { Header, headerEkleyici }

@@ -10,8 +10,8 @@ Bu sprint mücadelesi sırasında işbirliği yapmanıza izin verilmez.
 
 ### Proje Kurulumu
 
-* [ ] Bu projenyi forklayarak bir kopyasını oluşturun.
-* [ ] Reponun kendi versiyonunuzu klonlayın.
+* [x] Bu projenyi forklayarak bir kopyasını oluşturun.
+* [x] Reponun kendi versiyonunuzu klonlayın.
 * [ ] Commitinizi pushlayın: `git push origin main`.
 
 ## Proje Açıklaması
@@ -26,15 +26,15 @@ Aşağıda listelenen minimum uygulanabilir ürün (MVP) spesifikasyonlarını k
 
 ### Detaylar
 
-- [ ] Komut satırınızla projenin kök dizinine gidin.
-- [ ] `package.json` dosyasında listelenen bağımlılıkları indirmek için `npm install` komutunu çalıştırın.
-- [ ] Projeyi derlemek ve sunmak için `npm start` komutunu çalıştırın.
-- [ ] Chrome'da `http://localhost:3000` konumuna gidin
-- [ ] Testleri çalıştırmak için ayrı bir terminalde `npm test` komutunu yazın.
+- [x] Komut satırınızla projenin kök dizinine gidin.
+- [x] `package.json` dosyasında listelenen bağımlılıkları indirmek için `npm install` komutunu çalıştırın.
+- [x] Projeyi derlemek ve sunmak için `npm start` komutunu çalıştırın.
+- [x] Chrome'da `http://localhost:3000` konumuna gidin
+- [x] Testleri çalıştırmak için ayrı bir terminalde `npm test` komutunu yazın.
 
 **MVP için adımlar:**
 
-- [ ] Adım 1 ve 2 `src/bileşenler/header.js` dosyasında açıklandı.
+- [x] Adım 1 ve 2 `src/bileşenler/header.js` dosyasında açıklandı.
 - [ ] Adım 3 ve 4 `src/bileşenler/tabs.js` dosyasında açıklandı.
 - [ ] Adım 5 ve 6 `src/bileşenler/card.js` dosyasında açıklandı.
 

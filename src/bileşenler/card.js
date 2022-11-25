@@ -1,4 +1,38 @@
+import axios, { Axios } from "axios";
+
 const Card = (makale) => {
+  const divCard = document.createElement('div');
+  divCard.classList.add("card");
+  const divHeadline = document.createElement('div');
+  divHeadline.classList.add("headline");
+  divHeadline.textContent = makale.anabaslik;
+  divCard.appendChild(divHeadline);
+
+  const divAuthor = document.createElement('div');
+  divAuthor.classList.add("author");
+  const divImage = document.createElement('div');
+  divImage.classList.add("img-container");
+
+  const imgAuthor = document.createElement('img');
+  imgAuthor.src = makale.yazarFoto;
+
+  divImage.appendChild(imgAuthor);
+  divAuthor.appendChild(divImage);
+
+
+  const spanAuthor = document.createElement('span');
+  spanAuthor.textContent = `${makale.yazarAdi} tarafından`;
+
+
+  divAuthor.appendChild(spanAuthor);
+
+  divCard.appendChild(divAuthor);
+
+  divCard.addEventListener("click" , () => {
+    console.log(makale.anabaslik);
+  });
+
+  return divCard;
   // GÖREV 5
   // ---------------------
   // Aşağıda gördüğünüz işaretlemeyi döndürmesi gereken bu fonksiyonu uygulayın.
@@ -28,6 +62,18 @@ const cardEkleyici = (secici) => {
   // Card bileşenini kullanarak yanıttaki her makale nesnesinden bir kart oluşturun.
   // Her cardı, fonksiyona iletilen seçiciyle eşleşen DOM'daki öğeye ekleyin.
   //
+
+  axios
+    .get("http://localhost:5001/api/makaleler")
+    .then((resp) => {
+      console.log(resp.data.makaleler);
+      for(let i in resp.data.makaleler){
+        resp.data.makaleler[i].forEach((element) => {
+          let result = Card(element)
+          document.querySelector(secici).appendChild(result)
+        })
+      }
+    })
 }
 
 export { Card, cardEkleyici }
