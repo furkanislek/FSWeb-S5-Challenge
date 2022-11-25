@@ -12,7 +12,7 @@ Bu sprint mücadelesi sırasında işbirliği yapmanıza izin verilmez.
 
 * [x] Bu projenyi forklayarak bir kopyasını oluşturun.
 * [x] Reponun kendi versiyonunuzu klonlayın.
-* [ ] Commitinizi pushlayın: `git push origin main`.
+* [x] Commitinizi pushlayın: `git push origin main`.
 
 ## Proje Açıklaması
 
@@ -35,8 +35,8 @@ Aşağıda listelenen minimum uygulanabilir ürün (MVP) spesifikasyonlarını k
 **MVP için adımlar:**
 
 - [x] Adım 1 ve 2 `src/bileşenler/header.js` dosyasında açıklandı.
-- [ ] Adım 3 ve 4 `src/bileşenler/tabs.js` dosyasında açıklandı.
-- [ ] Adım 5 ve 6 `src/bileşenler/card.js` dosyasında açıklandı.
+- [x] Adım 3 ve 4 `src/bileşenler/tabs.js` dosyasında açıklandı.
+- [x] Adım 5 ve 6 `src/bileşenler/card.js` dosyasında açıklandı.
 
 **Önemli Notlar:**
 
