@@ -53,7 +53,12 @@ Aşağıda listelenen minimum uygulanabilir ürün (MVP) spesifikasyonlarını k
 Aşağıdaki soruları yanıtlayarak bu sprint'in kavramlarını anladığınızı gösterin. Her sorudan sonra yanıtlarınızı eklemek için bu belgeyi düzenleyin.
 
 1. DOM nedir?
+- Document Object Model sayesinde ulaşmak istediğimiz kaynaklara daha rahat ulaşabiliyoruz. Erişilen nesnelerin içeriğini stilini classını değiştirebiliriz.
 2. Bir event nedir?
+- Dom'da gerçekleşen olaylara event denir. click, mouseover, mouseout, wheel gibi eventler kullanılır.
 3. Bir event dinleyici(listener) nedir?
+- Bir event tetiklendiğinde ne olacağını belirlemek için kullandığımız yöntemdir. click olduğunda background red yap gibi.
 4. Neden bir NodeList'i Array'e dönüştürelim??
+- Nodelist içindeki verilere array olarak erişmek için dönüştürmemiz gerekir. Array öğesinde forEach ile daha rahat işlem yapabiliriz.
 5. Bileşen nedir?
+- projeler de bütün projeyi tek dosyada yazmak yerine birçok farklı component yazarak gerekli componentler kullanılabilir. Componentler farklı dosyalarda çağırabilerek her sayfada kullanılabilir. Menü, footer, navbar kısımları gibi kısımlar component olduğunda her yerde kullanılır.

@@ -24,9 +24,11 @@ const Header = (baslik, tarih, yazi) => {
   h1Baslik.textContent = baslik;
   spanYazi.textContent = yazi;
 
-  headerDiv.appendChild(spanDate);
-  headerDiv.appendChild(h1Baslik);
-  headerDiv.appendChild(spanYazi);
+  headerDiv.append(spanDate,h1Baslik,spanYazi);  //Deneme. Çalıştı 🎉🎉🎉
+
+  // headerDiv.appendChild(spanDate);
+  // headerDiv.appendChild(h1Baslik);
+  // headerDiv.appendChild(spanYazi);
 
   return headerDiv;
 }

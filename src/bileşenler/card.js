@@ -1,4 +1,4 @@
-import axios, { Axios } from "axios";
+import axios from "axios";
 
 const Card = (makale) => {
   const divCard = document.createElement('div');
